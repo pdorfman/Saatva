@@ -1,13 +1,14 @@
 $structure-gray: #e3e3e3;
+$branding-gold: #d5b477;
+$container-bg: #ffffff;
 
-h1 {
-  text-transform: uppercase;
-}
 
 .banner {
   font-size: 19px;
   padding: 20px;
-  border-bottom: 1px solid #d5b477;
+  background-color: $container-bg;
+  border-bottom: 1px solid $branding-gold;
+  text-transform: uppercase;
 }
 
 .logo {
@@ -17,6 +18,10 @@ h1 {
   top: 2px;
   margin-right: 8px;
 }
+
+
+
+/* --- Layout --- */
 
 .main {
   display: flex;
@@ -31,6 +36,17 @@ h1 {
   flex: 2;
 }
 
+.content {
+  flex: 3;
+  padding: 0 2%;
+  border: 1px solid $structure-gray;
+  background-color: $container-bg;
+}
+
+
+/*--- Navigation --- */
+
+
 ul.nav__links {
   list-style: none;
   border: 1px solid $structure-gray;
@@ -38,26 +54,29 @@ ul.nav__links {
 }
 
 .nav__links li {
-  padding: 30px;
   border-bottom: 1px solid $structure-gray;
+  background-color: $container-bg;
 }
 
-.content {
-  flex: 3;
-  border: 1px solid $structure-gray;
-  padding: 0 5%;
+.article-link {
+  padding: 30px;
+}
+
+
+/* --- Body Content --- */
+
+
+h1 {
+  margin: 1em 0;
+  text-align: center;
 }
 
 .content h2 {
-  text-align: center;
-  margin: 5%;
+  margin: 2.5rem 0 1rem 0;
 }
 
 .content__image {
-  display: inline-block;
   width: 100%;
-  height: 200px;
-  border: 1px solid red;
 }
 
 ul.content__social {
@@ -66,14 +85,41 @@ ul.content__social {
 
 .content__social li {
   float: right;
-  width: 15px;
-  height: 15px;
-  border: 1px solid gray;
-  margin-left: 5px;
+  margin-left: 1rem;
+}
+
+.content__social li a {
+  //width: 100%;
+  //height: 100%;
 }
 
 .content__article {
   margin: 5% 0;
+  text-align: justify;
+  //text-justify: distribute;
+}
+
+.content__article p {
+  margin: 1em 0;
+}
+
+.content__social li a {
+  opacity: .7;
+}
+.content__social li a:hover {
+  opacity: 1;
+}
+
+.icon_facebook {
+  color: #3b5998;
+}
+
+.icon_twitter {
+  color: #00aced;
+}
+
+.icon_rss {
+  color: #f26522;
 }
 
 /*.App {*/
