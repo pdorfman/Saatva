@@ -60,22 +60,23 @@ ul.nav__links {
 
 .article-link {
   position: relative;
-  padding: 30px;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 3rem 2rem;
   overflow: hidden;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .article-link img {
   position: absolute;
   width: 100%;
-  top: 0;
-  left: 0;
+  height: 100%;
+  object-fit: cover;
   opacity: 0;
 }
 
-.article-link:hover {
+.article-link:hover{
   color: #fff;
   background-color: #000;
 }
@@ -87,6 +88,16 @@ ul.nav__links {
 .article-link span {
   position: relative;
   z-index: 1;
+  font-size: 1.2em;
+}
+
+.article-link.active {
+  color: #fff;
+  background-color: #70521d;
+}
+
+.article-link.active img {
+  opacity: .4;
 }
 
 
@@ -121,13 +132,13 @@ ul.content__social {
 }
 
 .content__article {
-  margin: 5% 0;
+  margin: 3.5rem 0 2em 0;
   text-align: justify;
   //text-justify: distribute;
 }
 
 .content__article p {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 .content__social li a {
