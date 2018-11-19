@@ -12,13 +12,18 @@ library.add(faRss, faEnvelope, faTwitter, faFacebookF);
 
 function ArticleLink({article}) {
   console.log(article);
-  return <div className="article-link">{article.title}</div>;
+
+  return (
+    <div className="article-link" >
+      <span>{article.title}</span>
+      <img src={article.urlToImage}/>
+    </div>
+  );
 }
 
 function Navigation({articles}) {
   return (
     <ul className="nav__links">
-
       {articles.map(article => (
         <li key={article.title}>
           <ArticleLink article={article}/>
@@ -30,8 +35,8 @@ function Navigation({articles}) {
 
 function Article({article}) {
 
-  let mailTo = `mailto:?subject=Sharing Saatva Mattress News!&body=Hi,I found this website\n" +
-    "and thought you might like it ${article.url}/`;
+  let mailTo = `mailto:?subject=Sharing Saatva Mattress News!&body=Check out this amazing article: ${article.url}/`;
+
   return (
     <>
       <h1>{article.title}</h1>
@@ -50,9 +55,7 @@ function Article({article}) {
           <a href={mailTo}><FontAwesomeIcon icon="envelope" /></a>
         </li>
       </ul>
-      <div className="content__article" dangerouslySetInnerHTML={{__html: article.long_description}}>
-
-      </div>
+      <div className="content__article" dangerouslySetInnerHTML={{__html: article.long_description}} />
     </>
   );
 }
@@ -69,6 +72,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    // Retrieve Articles JSON
     axios.get("http://s3-us-west-2.amazonaws.com/saatva-hiring/news.json")
       .then(
         (result) => {

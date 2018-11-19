@@ -59,7 +59,34 @@ ul.nav__links {
 }
 
 .article-link {
+  position: relative;
   padding: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.article-link img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.article-link:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.article-link:hover img {
+  opacity: .6;
+}
+
+.article-link span {
+  position: relative;
+  z-index: 1;
 }
 
 
