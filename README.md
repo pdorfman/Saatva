@@ -9,7 +9,7 @@ Thank you for your consideration, and hope you enjoy!
 The solution is <a href="http://saatva.thisiteration.com" target="_blank">hosted on my website</a> for your convenience.
 
 ## Distribution Build 
-"dist/dorfman_hiring-test_build.zip" contains the "production-ready" app as built with NPM 6.4.1 from the source code residing in this repo as of the final commit. The app is configured to use relative asset paths, so you may unzip the archive and put the contents in any directory on a web server of your choosing.
+[dist/dorfman_hiring-test_build.zip](dist/dorfman_hiring-test_build.zip) contains the "production-ready" app as built with NPM 6.4.1 from the source code residing in this repo as of the final commit. The app is configured to use relative asset paths, so you may unzip the archive and put the contents in any directory on a web server of your choosing.
 
 ## Build from source
 You may clone the repository and run a dev build locally by navigating to the project root and running: 
