@@ -21,7 +21,7 @@ You may also build the production assets from source and deploy on a web server 
 ``` npm run build```
 
 ## Technologies Leveraged
-The following are the primary technologies used in this project. See "package.json" for the full list of dependencies.
+The following are the primary technologies used in this project. See [package.json](package.json) for the full list of dependencies.
 1. <a href="https://www.npmjs.com/" target="_blank">NPM 6.4.1</a>
 2. <a href="https://reactjs.org/" target="_blank">React 16.6.3</a>
 3. <a href="https://www.npmjs.com/package/node-sass" target="_blank">Sass 4.10.0</a>
