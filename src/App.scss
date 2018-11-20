@@ -6,12 +6,11 @@ $link-padding-lr: 2rem;
 
 @mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
   -webkit-transition: $what $time $how;
-  -moz-transition:    $what $time $how;
-  -ms-transition:     $what $time $how;
-  -o-transition:      $what $time $how;
-  transition:         $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
 }
-
 
 /* --- Layout --- */
 
@@ -46,10 +45,7 @@ $link-padding-lr: 2rem;
   display: none;
 }
 
-
-
 /* --- Banner --- */
-
 
 .banner__back {
   position: fixed;
@@ -94,10 +90,7 @@ $link-padding-lr: 2rem;
   margin-right: 8px;
 }
 
-
-
 /*--- Navigation --- */
-
 
 ul.nav__links {
   list-style: none;
@@ -127,9 +120,7 @@ ul.nav__links {
   width: 30%;
   height: 100%;
   object-fit: cover;
-  //object-position: 0 50%;
   opacity: 1;
-  //margin-left: 2.5%;
 }
 
 .article-link span {
@@ -138,10 +129,7 @@ ul.nav__links {
   font-size: 1.2em;
 }
 
-
-
 /* --- Body Content --- */
-
 
 h1 {
   margin: 1em 0;
@@ -160,20 +148,14 @@ ul.content__social {
   list-style: none;
 }
 
-.content__social li {
+ul.content__social li {
   float: right;
   margin-left: 1rem;
-}
-
-.content__social li a {
-  //width: 100%;
-  //height: 100%;
 }
 
 .content__article {
   margin: 3.5rem 0 2em 0;
   text-align: justify;
-  //text-justify: distribute;
 }
 
 .content__article p {
@@ -183,6 +165,7 @@ ul.content__social {
 .content__social li a {
   opacity: .7;
 }
+
 .content__social li a:hover {
   opacity: 1;
 }
@@ -199,13 +182,13 @@ ul.content__social {
   color: #f26522;
 }
 
-
 @media only screen and (min-width: 768px) {
+
   html {
     scroll-behavior: smooth;
   }
+
   .banner__content {
-    //position: relative;
     text-align: left;
     padding-left: 1.5rem;
   }
@@ -242,7 +225,7 @@ ul.content__social {
     opacity: 0;
   }
 
-  .article-link:hover{
+  .article-link:hover {
     background-color: #e5e0d7;
   }
 
@@ -260,37 +243,3 @@ ul.content__social {
     opacity: .4;
   }
 }
-
-
-/*.App {*/
-/*text-align: center;*/
-/*}*/
-
-/*.App-logo {*/
-/*animation: App-logo-spin infinite 20s linear;*/
-/*height: 40vmin;*/
-/*}*/
-
-/*.App-header {*/
-/*background-color: #282c34;*/
-/*min-height: 100vh;*/
-/*display: flex;*/
-/*flex-direction: column;*/
-/*align-items: center;*/
-/*justify-content: center;*/
-/*font-size: calc(10px + 2vmin);*/
-/*color: white;*/
-/*}*/
-
-/*.App-link {*/
-/*color: #61dafb;*/
-/*}*/
-
-/*@keyframes App-logo-spin {*/
-/*from {*/
-/*transform: rotate(0deg);*/
-/*}*/
-/*to {*/
-/*transform: rotate(360deg);*/
-/*}*/
-/*}*/
