@@ -1,4 +1,4 @@
-# Saatva New Hiring Test
+# Saatva News Hiring Test
 This repository contains all of the artifacts I have created for the "Saatva News" hiring test. While vanilla JavaScript/HTML/CSS would have been more than adequate to this project, I chose to build this application with React as it would be directly relevant to the position at hand.
 
 I thank you for the opportunity to show you my wares, and hope you enjoy!
