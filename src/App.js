@@ -43,11 +43,11 @@ function Article({article}) {
           <a href='#'><FontAwesomeIcon icon="rss" className="icon_rss"/></a>
         </li>
         <li>
-          <a href='https://twitter.com/SaatvaMattress/' target="_blank"><FontAwesomeIcon icon={["fab", "twitter"]}
+          <a href='https://twitter.com/SaatvaMattress/' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "twitter"]}
                                                                                          className="icon_twitter"/></a>
         </li>
         <li>
-          <a href='https://www.facebook.com/saatva/' target="_blank"><FontAwesomeIcon icon={["fab", "facebook-f"]}
+          <a href='https://www.facebook.com/saatva/' target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "facebook-f"]}
                                                                                       className="icon_facebook"/></a>
         </li>
         <li>
