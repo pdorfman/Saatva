@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #585858;
-  background-color: #f7f7f7;
+  background-color: #eaeaea;
 }
 
 * {
@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Questrial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+ul {
+  margin-left: 3em;
 }
+
